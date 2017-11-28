@@ -1,0 +1,350 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome to PY Market</title>
+	<link rel="stylesheet" href="style/style.css">
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"></script>
+  <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+
+</head>
+<body style="height:100vh;">
+    <nav>
+     <ul>
+         <li id = "logo" style='margin-right:5%; margin-left:5%;'><h3 style = 'color:white;'>PY Market</h3></li>
+         <li><button id='item' class ='desktop'><h4>Main page</h4</button></li>
+         <li><button id='currencies' class ='desktop'><h4>Buy cryptocurrency</h4></button></li>
+         <li style="float:right" class ='desktop'><button id='icon'><h4>Logout</h4> </button></li>
+      </ul>
+  </nav>
+
+  <div class = 'container' id="login_page"  >
+    <div class= 'row' style= 'height:20%;position: relative;'></div>
+        <!-- Let the login panel stay in middle -->
+    <div class= 'row'>
+        <div class = 'col-md-4'></div>
+     <div class = 'col-md-4'class = 'login' >
+         <h1 class = 'login-header'>login</h1>
+         <div class = 'login-container'>
+           <form class = 'login_panel' autocomplete="on">
+           <p><input type="text" name="username" id="usern" placeholder="Username"></p>
+           <p><input type="password" name="password" id="passw" placeholder="Password"></p>
+         </form>
+          <p><button id="login_b">Login</button></p>
+       </div>
+
+     </div>
+     <div class = 'col-md-4'></div>
+
+   </div>
+
+</div>
+
+  <div class = 'container' id="exchange_page">
+     <div class= 'row' style= 'height:10%;position: relative;'></div>
+     <div class= 'row'>
+       <div class= 'col-md-2'></div>
+       <div class= 'col-md-8' id ='ex_panel'>
+         <div  class = 'exchange_box'>
+           <div class = 'exchange_header'>
+    	        <h1>Buy Virtual Currencies</h1>
+    	         <h3>We only accept virtual currencies on our website, please use U.S. dollar to exchange virtual currencies first.</h3>
+          </div>
+          <form class = "exchange_panel">
+    		      <p><font size="3">What kind of virtual currency do you want to buy? <input type="text" id="vcurrType"placeholder="Currency Name"></font></p>
+    		      <p><font size="2">*We offer all kinds of virtual currencies shown in exchange rate page.</font></p>
+			      <p><font size="3">How many do you want to buy? <input type="text" id="vcurrNumber"placeholder="Quantity"></font></p>
+		    </form>
+          <p><button id="trade_b">Trade</button></p>
+        </div>
+        </div>
+        <div class= 'col-md-2'></div>
+    </div>
+    <div class = 'row'>
+      <div class = 'col-md-2'></div>
+      <div class = 'col-md-4' style="background:#A9A9A9;">
+        <button id = "ex_to_rate_b">
+             Show exchange rate
+        </button>
+      </div>
+      <div class = 'col-md-4' style="background:#A9A9A9; padding:0px 15px;">
+        <button id = "ex_to_item_b">
+  			     Back to Main page
+  		  </button>
+      </div>
+      <div class = 'col-md-2'></div>
+    </div>
+  </div>
+
+    <div class = "container" id="item_page">
+
+      <div class = 'row' style="height:15%; text-align:center;" >
+    	   <h1>List of items sell on our website.</h1>
+      </div>
+      <div class = 'row' id="item_list" >
+        <div class = 'col-md-3' id="name">
+            <div class= "text" id="passport_p">-> Custom passport</div>
+        </div>
+        <div class = 'col-md-4' id="description">
+          <div class= "text">Can be used for escape into exile, identity theft, age fabrication, illegal immigration, and organized crime.</div>
+        </div>
+        <div class = 'col-md-5' id ="image">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Us-passport.jpg/200px-Us-passport.jpg"  >
+        </div>
+      </div>
+      <div class = 'row' id="item_list">
+        <div class = 'col-md-3' id="name">
+    	      <div class= "text" id="RPG">-> RPG</div>
+        </div>
+        <div class = 'col-md-4' id="description">
+          <div class= "text">Man-portable, shoulder-fired anti-tank weapon, it is easy to use.</div>
+        </div>
+        <div class = 'col-md-5' id = "image">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/RPG-29_USGov.JPG/1200px-RPG-29_USGov.JPG"  >
+        </div>
+      </div>
+        <div class = 'row' id="item_list">
+          <div class = 'col-md-3' id="name">
+              <div class= "text">Nuclear launch code</div>
+
+          </div>
+          <div class = 'col-md-4' id="description">
+              <div class= "text">Coming soon...</div>
+          </div>
+          <div class = 'col-md-5' id = "image">
+            <img src="https://www.motherearthnews.com/-/media/Images/MEN/Editorial/Articles/Magazine-Articles/1973/11-01/Feedback-on-David-Brower-and-Nuclear-Power-Safety/nuclear-panic-button---Fotolia.jpg?h=378&la=en&w=432&hash=89B12B37656453627D47B552C6C8C3A7D810755A"  >
+          </div>
+        </div>
+          <div class = 'row' id="item_list">
+            <div class = 'col-md-3' id="name">
+                <div class= "text">Trip to Moon</div>
+            </div>
+            <div class = 'col-md-4' id="description">
+                <div class= "text">Coming this winter</div>
+            </div>
+            <div class = 'col-md-5' id = "image">
+              <img src="http://www.earthandspace.org/files/2013/11/circumnavigationI-l.jpg"  >
+            </div>
+          </div>
+        <!-- <ul>*Nuclear launch code(coming soon...)</ul> -->
+        <!-- <ul>*trip to moon(coming this winter)</ul> -->
+        <div class="row">
+          <h3>*You need to use crytocurrency to purchase.*</h3>
+        </div>
+      <div class="row">
+        <div class = "col-md-4">
+    	   <button id = "item_to_ex_b">Buy some cryptocurrency.</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="rate_page">
+      <div class = "row">
+    	   <h1>Exchange rate: Virtual Currencies/USD.</h1>
+      </div>
+      <div>
+    	   <button id = "rate_to_ex_b">Back</button>
+      </div>
+    	<ul id="ex_rate_list"></ul>
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    </div>
+
+    <div id="detail">
+	<h1>Item detail.</h1>
+	<button id="back4">
+		Back to main page
+	</button>
+    </div>
+
+</body>
+
+<script>
+  var islogin = 0;
+
+  function verifyID(un, pw) {
+    if (un == "admin" && pw == "password") {
+      islogin = 1;
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+  function showExchange(){
+    $.ajax({
+      url: 'https://api.coinmarketcap.com/v1/ticker/',
+      method: 'GET',
+      dataType: 'html'
+        }).then(data => {
+          $("#ex_rate_list").empty();
+          d = JSON.parse(data)
+          d.forEach(elem =>{
+            // jquery('<ul>', {
+            //     id: 'currency_box',
+            //     class: 'col-md-4'
+            //   }).appendTo('#ex_rate_list')
+            // $('<li>', {
+            //   id = 'virtual'
+            // }).appendTo('#currency_box')
+            // $('<li>', {
+            //   id = 'equal'
+            // }).appendTo('#currency_box')
+            // $('<li>', {
+            //   id = 'usd'
+            // }).appendTo('#currency_box')
+            //
+            // $('<div>', {class = 'text'}).text("1" + elem.name).appendTo('#virtual')
+            // $('<div>', {class = 'text'}).text("=").appendTo('#equal')
+            // $('<div>', {class = 'text'}).text( elem.price_usd + ' USD').appendTo('#usd')
+             $("#ex_rate_list").append(" <ul class=\"col-md-4\" id=\"currency_box\"><li  id = \"virtual\"><div  class =\"text\" > 1 " +
+               elem.name+"</div></li><li id = \"equal\"><div  class= \"text\" > = </div></li>"
+              + "<li id = \"usd\"><div  class= \"text\" > " + elem.price_usd + "USD</div></li></ul>")
+            // $("<li>").text('1 ' + elem.name + ' = ' + elem.price_usd + ' USD').appendTo("#ex_rate_list")
+          })
+        })
+  }
+
+  function getRate(type){
+    var done = false;
+    var p1 = new Promise((resolve, reject) => {
+      $.ajax({
+          url: 'https://api.coinmarketcap.com/v1/ticker/',
+          method: 'GET',
+          dataType: 'html'
+        }).then(data => {
+          d = JSON.parse(data);
+          d.forEach(elem =>{
+            if(elem.name === type){
+                done = true
+                $("#exchange_page").hide();
+                $("#item_page").show();
+                return resolve(elem.price_usd);
+              }
+            })
+            if(!done){
+              var err = new Error("Virtual currency name not found, please try again with the name in the exchange rate page.")
+              alert(err)
+              reject(err)
+            }
+          })
+    })
+    return p1;
+  }
+
+  $("document").ready(function(){
+    $("#exchange_page").hide();
+    $("#item_page").hide();
+    $("#rate_page").hide();
+    $("#detail").hide();
+  })
+
+  $("#login_b").click(function(){
+    if (verifyID($("#usern").val(), $("#passw").val())) {
+      alert("Login success!");
+      $("#item_page").show();
+      $("#login_page").hide();
+    } else {
+      alert("Wrong User Name or password.");
+    }
+  })
+
+  $("#trade_b").click(function(){
+    let num = $("#vcurrNumber").val();
+    let type = $("#vcurrType").val();
+    if (num != "" && type != "") {
+      let doExchange = getRate(type).then(function(value){
+        alert(num + " " + type + " cost you " + num * value + " USD");
+        alert(num + " " + type + " in your account.");
+      });
+    } else {
+      alert("Please fill out the type of currency and the number you want to trade.")
+    }
+  })
+
+  $("#ex_to_item_b").click(function(){
+    $("#exchange_page").hide();
+      $("#item_page").show();
+  })
+
+  $("#item_to_ex_b").click(function(){
+    $("#item_page").hide();
+    $("#exchange_page").show();
+  })
+
+  $("#rate_to_ex_b").click(function(){
+    $("#rate_page").hide();
+    $("#exchange_page").show();
+  })
+
+  $("#ex_to_rate_b").click(function(){
+    $("#exchange_page").hide();
+    showExchange();
+    $("#rate_page").show();
+  })
+
+  $("#RPG").click(function(){
+    $("#detail").append('<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/RPG-29_USGov.JPG/1200px-RPG-29_USGov.JPG" height="300px" width="300px">')
+    $("#detail").append('<p id= removet> man-portable, shoulder-fired anti-tank weapon, it is easy to use </p>')
+    $("#item_page").hide();
+    $("#detail").show();
+
+  })
+
+  $("#passport_p").click(function(){
+    $("#detail").append('<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Us-passport.jpg/200px-Us-passport.jpg" height="300px" width="300px">')
+    $("#detail").append('<p id = removet>  can be used for escape into exile, identity theft, age fabrication, illegal immigration, and organized crime. </p>')
+    $("#item_page").hide();
+    $("#detail").show();
+  })
+
+  $("#back4").click(function(){
+    $("#detail").hide();
+    $("#item_page").show();
+    $("#detail > img").remove();
+    $("#removet").remove();
+  })
+
+   $("#icon").click(function(){
+      islogin = 0;
+      $("#exchange_page").hide();
+      $("#item_page").hide();
+      $("#login_page").show();
+  })
+
+  $("#currencies").click(function(){
+      if (islogin == 1) {
+        $("#exchange_page").show();
+        $("#item_page").hide();
+        $("#login_page").hide();
+      } else {
+        alert("Please login first.");
+      }
+
+  })
+
+  $("#item").click(function(){
+      if (islogin == 1) {
+        $("#exchange_page").hide();
+        $("#rate_page").hide();
+        $("#login_page").hide();
+        $("#item_page").show();
+      } else {
+        alert("Please login first.");
+      }
+
+  })
+
+
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0; // For Chrome, Safari and Opera
+    document.documentElement.scrollTop = 0; // For IE and Firefox
+  }
+
+</script>
+</html>

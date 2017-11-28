@@ -1,0 +1,404 @@
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:#28d;
+}
+
+#menu{
+  display: none;
+}
+#currency_box {
+  height: 10%;
+  max-width:100%;
+  max-height:100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+
+}
+#currency_box li{
+  float: left;
+  text-align: center;
+  list-style-type: none;
+  height: 100%;
+  width: 33%;
+}
+
+nav li {
+    float: left;
+    display: block;
+    text-decoration: none;
+    border: none;
+    background: none;
+}
+
+li button {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border: none;
+    background: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li button:hover {
+    background-color: #111;
+}
+
+.login {
+  width: 400px;
+  margin: 16px auto;
+  font-size: 16px;
+}
+
+/* Reset top and bottom margins from certain elements */
+.login-header,
+.exchange_header,
+.login p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* The triangle form is achieved by a CSS hack */
+.login-header{
+  background: #28d;
+  padding: 20px;
+  font-size: 1.4em;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.exchange_header {
+
+  padding: 20px;
+  font-size: 1.4em;
+  font-weight: normal;
+  text-align: center;
+}
+
+
+.login-container  {
+  background: #ebebeb;
+  padding: 12px;
+}
+.exchange_box{
+
+}
+#ex_panel{
+  padding: 1px;
+}
+
+/* Every row inside .login-container is defined with p tags */
+.login-container p
+.exchange_panel p {
+  padding: 12px;
+  border: none;
+}
+
+.login-container input {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  padding: 16px;
+  outline: 0;
+  font-family: inherit;
+  font-size: 0.95em;
+}
+
+.exchange_box input {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  padding: 16px;
+  outline: 0;
+  font-family: inherit;
+  font-size: 1em;
+}
+/*.login input[type="email"],*/
+.login input[type="text"] {
+  background: #fff;
+  border-color: #bbb;
+  color: #555;
+}
+
+/* Text fields' focus effect */
+/*.login input[type="text"]:focus,*/
+.login input[type="text"]:focus {
+  border-color: #888;
+}
+
+#ex_to_rate_b,
+#ex_to_item_b {
+    background: 	#A9A9A9 !important;
+    color:black !important;
+}
+/*#ex_to_item_b {
+  padding-left: 0px!important;
+
+}
+#ex_to_rate_b {
+  padding-right: 0px !important;*/
+
+
+/*#login_b,
+#trade_b{
+  background: #28d;
+
+}*/
+
+#login_b,
+#trade_b,
+#ex_to_rate_b,
+#ex_to_item_b,
+#item_to_ex_b {
+    width: 100%;
+    display: block;
+    color:white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border: none;
+    background: #28d;
+}
+
+
+
+.exchange_box {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  padding: 16px;
+  outline: 0;
+  font-family: inherit;
+  font-size: 0.95em;
+
+}
+
+
+
+#myBtn {/* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: red; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+}
+
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
+.container{
+  height:100%;
+}
+img {
+  /*width: 100%;
+  max-width: inherit;
+  max-height:inherit;*/
+  max-width:100%;
+  max-height:100%;
+  align: center;
+	margin: auto;
+  display:table-cell;
+}
+#item_page .row {
+  padding: 10px;
+  /*border-style: solid;
+  border-color: grey;
+  margin: 10px;*/
+}
+
+#item_list {
+  height: 25%;
+  padding: 10px;
+}
+
+#item_list #name{
+  height: 100%;
+  /*width: 100%;*/
+  font-family: "Lucida console";
+  font-size: 2em;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+  line-height:150%;
+  text-shadow: 2px 2px 8px #FF0000;
+  height: 100%;
+  border-color: grey;
+  border-width: 2px;
+  border-style: solid;
+  border-right-style: dotted;
+  max-width:100%;
+  max-height:100%;
+  /*align: center;
+	margin: auto;*/
+}
+
+#item_list #description{
+  height: 100%;
+  /*width: 100%;*/
+  max-width:100%;
+  max-height:100%;
+  /*align: center;
+	margin: auto;*/
+  border-style: solid;
+  border-color: grey;
+  border-bottom-width: 2px;
+  border-top-width: 2px;
+  border-left: 0px;
+  border-right: 0px;
+
+  /*border-right-style: dotted;*/
+}
+
+#item_list #image{
+  /*max-width:100%;*/
+  max-height:100%;
+  padding:5px;
+  /*align: center;
+	margin: auto;
+  display:table-cell;*/
+  height: 100%;
+  /*width: 100%;*/
+  border-color: grey;
+  border-width: 2px;
+  border-style: solid;
+  border-left-style: dotted;
+}
+
+#item_list #name .text{
+  position: relative;
+  margin-top: 25%
+}
+
+#item_list #description .text{
+  position: relative;
+  top: 10%;
+  height: 90%;
+
+}
+#currency_box{
+  height:10%;
+  padding:5px;
+
+}
+
+
+#currency_box #virtual{
+  height: 100%;
+  width: 43%;
+}
+#currency_box #virtual .text{
+
+  position: relative;
+  font-size: 1.5em;
+  font-weight: 800;
+  text-align: right;
+  color: green;
+  top: 20%;
+  height: 80%;
+
+}
+
+#currency_box #equal{
+  height: 100%;
+  width: 14%;
+
+}
+#currency_box #equal .text{
+  position: relative;
+  font-size: 2.5em;
+  font-weight: bold;
+  top: 40%;
+  height: 60%;
+
+}
+
+#currency_box #usd{
+  height: 100%;
+  width: 43%;
+}
+#currency_box #usd .text{
+  text-align: left;
+  position: relative;
+  font-size: 1.5em;
+  font-weight: 800;
+  color: red;
+  top: 60%;
+  height: 40%;
+
+}
+@media only screen and (max-width: 990px) {
+  #item_list #image{
+    width: 100%;
+    height: 35%;
+    border-color: grey;
+    border-width: 2px;
+    border-style: solid;
+    border-top-style: dotted;
+  }
+  #item_list #name{
+    width: 100%;
+    height: 35%;
+    border-width: 2px;
+    border-style: solid;
+    border-bottom-style: dotted;
+  }
+  #item_list #description{
+    width: 100%;
+    height: 35%;
+    border-style: solid;
+    border-color: grey;
+    border-bottom-width: 0px;
+    border-top-width: 0px;
+    border-left-width: 2px;
+    border-right-width: 2px;
+  }
+
+
+  #item_list #name .text{
+    display: block;
+    position: relative;
+    margin-top: 0%;
+    height: 100%;
+  }
+
+  #item_list #description .text{
+    display: block;
+    position: relative;
+    top: 0%;
+    height: 100%;
+
+  }
+  nav li {
+      float: none;
+    }
+  #logo,
+  #currencies,
+  #icon{
+    display: none;
+  }
+
+
+
+}
